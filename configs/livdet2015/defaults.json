@@ -1,0 +1,27 @@
+{
+  "resolution": 512,
+  "seed": 42,
+  "lora": {
+    "rank": 32, "learning_rate": 0.0001, "max_train_steps": 15000,
+    "train_batch_size": 1, "gradient_accumulation_steps": 4,
+    "checkpointing_steps": 2000, "mixed_precision": "fp16"
+  },
+  "prompt": {
+    "learning_rate": 0.001, "max_train_steps": 20000,
+    "train_batch_size": 4, "gradient_accumulation_steps": 2,
+    "checkpointing_steps": 4000, "mixed_precision": "bf16",
+    "residual_rank": 8, "residual_scale": 1.0, "residual_kappa": 0.25,
+    "anchor_loss_weight": 1.0, "residual_loss_weight": 0.0001,
+    "cosine_min": 0.97, "norm_ratio_min": 0.9, "norm_ratio_max": 1.1, "lora_scale": 0.8
+  },
+  "inference": {
+    "inference_steps": 30, "guidance_scale": 7.0, "control_scale": 0.6,
+    "strength": 0.92, "lora_scale": 0.8, "canny_low": 50, "canny_high": 200
+  },
+  "combos": {
+    "CrossMatch": ["CrossMatch_Body_Double", "CrossMatch_Ecoflex", "CrossMatch_Playdoh"],
+    "Digital_Persona": ["Digital_Persona_Ecoflex_00-50", "Digital_Persona_Gelatine", "Digital_Persona_Latex", "Digital_Persona_WoodGlue"],
+    "GreenBit": ["GreenBit_Ecoflex_00-50", "GreenBit_Gelatine", "GreenBit_Latex", "GreenBit_WoodGlue"],
+    "Hi_Scan": ["Hi_Scan_Ecoflex_00-50", "Hi_Scan_Gelatine", "Hi_Scan_Latex", "Hi_Scan_WoodGlue"]
+  }
+}

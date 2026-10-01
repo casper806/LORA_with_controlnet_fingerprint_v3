@@ -1,0 +1,6 @@
+{
+  "pipeline": "sd15",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "controlnet_model": "lllyasviel/sd-controlnet-canny",
+  "notes": "SD 1.5 + Canny ControlNet"
+}
