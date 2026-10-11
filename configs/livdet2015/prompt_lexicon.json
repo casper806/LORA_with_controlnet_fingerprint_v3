@@ -1,0 +1,57 @@
+{
+  "train_suffix": "long",
+
+  "combo_train_suffix": {
+    "GreenBit_Ecoflex_00-50": "short",
+    "GreenBit_Gelatine": "short",
+    "GreenBit_Latex": "short",
+    "GreenBit_WoodGlue": "short",
+    "Hi_Scan_Ecoflex_00-50": "short",
+    "Hi_Scan_Gelatine": "short",
+    "Hi_Scan_Latex": "short",
+    "Hi_Scan_WoodGlue": "short"
+  },
+
+  "lora_base": "grayscale fingerprint scan, PAD spoof domain, sensor-specific grayscale response, local contact artifacts, spoof material ridge-valley degradation",
+
+  "sensor": {
+    "CrossMatch": "CrossMatch scan, strong black-white contrast, white background, sparse scanner noise, locally broken dark ridges",
+    "Digital_Persona": "Digital Persona scan, flat even illumination, light gray background, moderate contrast, fine scanner grain, soft gray ridge response",
+    "GreenBit": "GreenBit scan, lifted off-white background, washed-out low contrast, soft faded ridges, scanner smoothing, gray speckles, edge pepper scatter",
+    "Hi_Scan": "Hi Scan capture, mid-gray ridge-valley continuity, soft shoulder fade, subtle valley shading, fine speckle grain, avoid pure black-white binarization, uneven contact density"
+  },
+
+  "material": {
+    "Body Double": "artificial continuous ridges, stippled interior, reduced pores, softened minutiae, white contact voids, missing ridge patches, feathered edge",
+    "Ecoflex": "smooth matte artificial ridges, mostly continuous flow, reduced pores, slightly filled valleys, soft cast edges, small contact gaps",
+    "Playdoh": "clay-like spoof texture, broken ridge continuity, coarse granular fill, overfilled black ridges, pale fissures, smudged pressure zones",
+    "Ecoflex 00-50": "soft swollen artificial ridges, filled valleys, pressure-softened edges, cast voids, weak pore-like speckles, reduced pores",
+    "Gelatine": "pitted artificial ridges, dense stippled grain, soft diffused edges, smeared gray valleys, wet contact patches, pore-like holes",
+    "Latex": "thin stretched artificial ridges, fragmented continuity, stippled membrane texture, speckled dropout, ragged feathered border, weak valley contrast",
+    "WoodGlue": "stiff dry artificial ridges, chalky granular fill, brittle micro-cracks, uneven thickness, fragmented continuity, dry glue speckles"
+  },
+
+  "prompt_suffix_combo": "LivDet2015 PAD spoof scan, live-to-fake material style transfer, grayscale only, no finger no color",
+  "prompt_suffix_combo_short": "PAD spoof, grayscale only",
+
+  "combo_overrides": {
+    "CrossMatch_Body_Double": "CrossMatch strong contrast, white background, dark fragmented ridge flow, stippled silicone interior, white contact voids, missing ridge patches, softened minutiae, feathered spoof edge",
+    "CrossMatch_Ecoflex": "CrossMatch strong contrast, white background, dark matte ridge fragments, shallow filled valleys, reduced pore speckles, soft cast edges, small white contact gaps, uneven ridge shoulders",
+    "CrossMatch_Playdoh": "CrossMatch strong contrast, white background, overfilled black ridges, clay granular fill, broken continuity, pale fissures, smudged zones, fragmented edges",
+
+    "Digital_Persona_Ecoflex_00-50": "Digital Persona flat scan, light gray background, soft swollen ridges, filled valleys, weak pore-like speckles, pressure-softened edges, cast voids",
+    "Digital_Persona_Gelatine": "Digital Persona flat scan, pitted stippled ridges, pore-like holes, soft diffused edges, smeared gray valleys, wet gray contact patches",
+    "Digital_Persona_Latex": "Digital Persona flat scan, thin stretched ridges, fragmented continuity, stippled membrane, ragged feathered border, weak valley contrast",
+    "Digital_Persona_WoodGlue": "Digital Persona flat scan, stiff dry ridges, chalky granular fill, brittle micro-cracks, dry glue speckles, rigid broken shoulders",
+
+    "GreenBit_Ecoflex_00-50": "soft swollen artificial ridges, filled cast valleys, pressure-softened spoof edges, weak pore speckles, GreenBit lifted off-white, washed-out low contrast, faint ridge fading, edge pepper scatter",
+    "GreenBit_Gelatine": "pitted stippled gelatin ridges, smeared shallow valleys, wet gray contact haze, soft diffused spoof edges, GreenBit lifted off-white, low contrast washout, edge pepper scatter",
+    "GreenBit_Latex": "thin stretched membrane ridges, fragmented continuity, white dropout zones, ragged feathered border, stippled interior, GreenBit off-white fade, low contrast, pepper noise at edges",
+    "GreenBit_WoodGlue": "chalky granular stiff ridges, dry glue speckles, brittle micro-cracks, ridge dropout, uneven thickness, GreenBit lifted background, low contrast washout, edge pepper scatter",
+
+    "Hi_Scan_Ecoflex_00-50": "Hi Scan high contrast capture, soft swollen silicone ridges, stippled pore grain inside ridges, filled bright white valleys, pressure-softened spoof shoulders, cast contact voids, scattered edge speckle, fragmented ridge tips at border",
+    "Hi_Scan_Gelatine": "pitted gelatin stippled grain, pore-like holes, smeared gray valleys, wet contact patches, soft diffused spoof edges, Hi Scan variable contrast, mid-gray haze, scattered edge speckle",
+    "Hi_Scan_Latex": "Hi Scan high contrast slap, thin stretched membrane ridges, stippled ridge interior, fragmented edge continuity, moderate white contact voids, smudged pressure zones at bottom, ragged feathered border, speckled membrane dropout",
+    "Hi_Scan_WoodGlue": "chalky granular stiff ridges, brittle micro-cracks, dry glue speckles, fragmented breakpoints, reduced continuity, uneven thickness, Hi Scan lighter faded spoof print, variable contrast, edge speckle"
+  }
+}
