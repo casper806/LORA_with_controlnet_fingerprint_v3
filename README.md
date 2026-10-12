@@ -8,6 +8,11 @@ Download the synthetic spoof fingerprint images generated for this study from
 This README provides the current download link and will be updated as the
 released images are organized and the release contents evolve.
 
+The released images are available for noncommercial research under the
+[Generated Fingerprint Data Research Use Terms](DATA_LICENSE.md), including
+model training, evaluation, and representative examples in research publications.
+Commercial use and dataset redistribution require separate written permission.
+
 ## Generator overview
 
 Generate synthetic spoof fingerprints from bona fide images using Stable
@@ -289,6 +294,18 @@ relative to the Training partition. Generated records use paths relative to
 
 ## Licensing
 
-A license for project-authored code has not been specified. Third-party notices
-and the bundled example's license are provided in
+Project-authored source code, configuration files, and documentation are licensed
+under the [Apache License 2.0](LICENSE), which permits research and commercial use.
+Third-party components retain their respective licenses; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+Released generated fingerprint images are covered separately by the
+[Generated Fingerprint Data Research Use Terms](DATA_LICENSE.md). These terms
+support noncommercial research, including PAD, generation quality, and authorized
+source-linkage and security evaluation. Commercial use and dataset redistribution
+require separate written permission from the releasing authors.
+
+For research using this code, please cite the associated paper and this
+repository. Publications using the released images must also acknowledge the
+data source and identify the release version or access date, as specified in
+the data terms.
