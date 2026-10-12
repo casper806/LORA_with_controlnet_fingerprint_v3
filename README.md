@@ -1,5 +1,15 @@
 # LivDet2015 synthetic spoof fingerprint generator
 
+## Download generated fingerprint images
+
+Download the synthetic spoof fingerprint images generated for this study from
+[Google Drive](https://drive.google.com/drive/folders/1yHW45Du9s8p1VaAqTuX4-ax9yCgFXzb7?usp=sharing).
+
+This README provides the current download link and will be updated as the
+released images are organized and the release contents evolve.
+
+## Generator overview
+
 Generate synthetic spoof fingerprints from bona fide images using Stable
 Diffusion 1.5 Img2Img, Canny ControlNet, a shared LoRA, and a caption-anchored
 residual PromptLearner for each sensor-material combination.
